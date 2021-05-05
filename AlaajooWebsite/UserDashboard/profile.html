@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/profile.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <!--Side Bar Nav-->
+        <nav class="sidebar">
+          <div class="logo">
+            <a href="#">
+              <h2 class="header-text" id="header-text">
+                ALAA<span class="logo-text">JOO</span>
+              </h2>
+            </a>
+          </div>
+          <ul class="side-nav">
+            <li class="side-nav_item">
+              <!-- <li class="side-nav_item side-nav_item--active"> -->
+              <a href="overview.html" class="side-nav_link">
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+                <span>Overview</span>
+              </a>
+            </li>
+            <li class="side-nav_item">
+              <a href="transactions.html" class="side-nav_link">
+                <i class="fa fa-google-wallet" aria-hidden="true"></i>
+                <span>Transactions</span>
+              </a>
+            </li>
+            <li class="side-nav_item">
+              <a href="payment.html" class="side-nav_link">
+                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                <span>Payment</span>
+              </a>
+            </li>
+            <!-- <li class="side-nav_item">
+              <a href="savings.html" class="side-nav_link">
+                <i class="fa fa-money" aria-hidden="true"></i>
+                <span>Savings</span>
+              </a>
+            </li> -->
+            <li class="side-nav_item">
+              <a href="#" class="side-nav_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li class="side-nav_item logout">
+              <a href="#" class="side-nav_link">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!--Dashboard View-->
+        <section class="dashboard-view">
+          <h2 class="greeting">Dear Oluwakemi Good evening</h2>
+
+          <div class="update-div">
+            <div class="update-text">
+              <h2>MY PROFILE</h2>
+              <div class="profile">
+                <form action="" method="">
+                  <h4>Account Information</h4>
+                  <input
+                    type="text"
+                    class="number"
+                    placeholder="ID"
+                    maxlength="5"
+                    required
+                  />
+                  <br />
+                  <input
+                    type="text"
+                    class="name"
+                    placeholder="Name"
+                    maxlength="30"
+                    required
+                  />
+                  <br />
+
+                  <input
+                    type="email"
+                    class="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <br />
+                  <input
+                    type="text"
+                    class="number"
+                    placeholder="Phone Number"
+                    maxlength="12"
+                    required
+                  />
+                  <br />
+                  <input
+                    type="text"
+                    class="password"
+                    placeholder="Plan"
+                    maxlength="30"
+                    required
+                  />
+
+                  <h4>Bank Account Details</h4>
+
+                  <input
+                    type="text"
+                    class="name"
+                    placeholder="Enter Account holder name"
+                    maxlength="30"
+                    required
+                  />
+                  <br />
+                  <input
+                    type="text"
+                    class="number"
+                    placeholder="Enter Account number"
+                    maxlength="10"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="number"
+                    placeholder="Enter Bank Name"
+                    maxlength="20"
+                    required
+                  />
+                  <br />
+                  <br />
+                  <div class="button">
+                    <button type="submit" class="buttonn" name="submit">
+                      Save
+                    </button>
+                  </div>
+                </form>
+                <!-- <div class="button">
+                  <input type="button" class="buttonn" value="Save" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <script src="js/jquery.js" type="text/javascript" defer></script> -->
+  </body>
+</html>

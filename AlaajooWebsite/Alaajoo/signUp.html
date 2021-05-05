@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/login.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/7638b55f18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- HEADER -->
+  <header id="header">
+      <div class="header-container">
+        <h2 class="header-text" id="header-text">ALAA<span class="logo-text">JOO</span></h2>
+        <div class="menu-icon" id="menu-icon">
+          <a id="menu" class="fa fa-bars"></a>
+        </div>
+      </div>
+      <div id="side-nav" class="header-nav-container">
+        <div class="side-nav-header-container">
+          <h2 class="side-nav-header">ALAA<span class="logo-text">JOO</span>
+          <i id="close-icon" class="fa fa-times"></i>
+        </div>
+        <ul>
+          <li class="link-li nav-link">
+            <i class="nav-icon fa fa-tachometer"></i>
+            <a href="home.html" id="home">Home</a>
+          </li>
+          <li class="link-li">
+            <i class="fas fa-address-card"></i>
+            <a href="./about.html" id="about">About</a>
+          </li>
+          <li class="link-li">
+            <i class="fas fa-calendar-alt"></i>
+            <a href="./plans.html" id="plans">Plans</a>
+          </li>
+          <li class="link-li">
+            <i class="nav-icon fa fa-registered"></i>
+            <a href="./signUp.html" id="register">Join Us</a>
+          </li>
+          <!-- <li class="link-li">
+            <i class="nav-icon fa fa-sign-out"></i>
+            <a href="#logout" id="logout">Logout</a>
+          </li> -->
+        </ul>
+      </div>
+  </header>
+  <body>
+    <section class="account-container">
+      <div class="register-login-container">
+        <div class="register-login-header">
+          <!-- <i class="far fa-calendar-alt"></i> -->
+          <!-- <h2 class="header-text" id="header-text">
+            ALAA<span class="logo-text">JOO</span>
+          </h2> -->
+        </div>
+        <div class="register-login-inner-container">
+          <div class="login-h1-text">
+            <h1>Welcome Back!</h1>
+          </div>
+          <div class="login-p-text">
+            <p>
+              To stay connected with us please login with your personal info
+            </p>
+          </div>
+          <a href="login.html">
+            <input class="login-btn" type="submit" value="LOG IN" />
+          </a>
+        </div>
+      </div>
+      <div class="register-container">
+        <div class="register-header">
+          <!-- <i class="far fa-calendar-alt"></i> -->
+          <h2 class="header-text" id="header-text">
+            ALAA<span class="logo-text">JOO</span>
+          </h2>
+        </div>
+        <div class="register-wrapper">
+          <div class="register-h1-text">
+            <h1>Create Account</h1>
+          </div>
+          <div class="social-media-icon">
+            <i class="media-icon fa fa-facebook"></i>
+            <i class="media-icon fa fa-google"></i>
+            <i class="media-icon fa fa-twitter"></i>
+          </div>
+          <div class="register-p-text">
+            <p>or use your email for registration</p>
+          </div>
+          <form action="/register" method="post">
+            <p class="error-message"></p>
+            <div class="input-container">
+              <div class="inner-input-container">
+                <i class="fa fa-user icon"> </i>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="Fname"
+                  required
+                />
+              </div>
+              <div class="inner-input-container">
+                <i class="fa fa-user icon"> </i>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name="Lname"
+                  required
+                />
+              </div>
+              <div class="inner-input-container">
+                <i class="fa fa-envelope icon"> </i>
+                <input type="text" placeholder="Email" name="email" required />
+              </div>
+              <div class="inner-input-container">
+                <i class="fa fa-lock icon"> </i>
+                <input
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+              </div>
+            </div>
+            <input type="submit" class="register-btn" value="SIGN UP" />
+            <div class="signup-forgotpassword">
+              <a href="login.html">login</a>
+              <a href="">forgot password</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer">
+        <div>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <p>Copyright@Alaajoo</p>
+      </div>
+    </footer>
+
+    <!-- <?php
+            $servername = "localhost";
+            $username = "username";
+            $password = "password";
+
+            //create connection(msqli Object-Oriented)
+            $conn = new mysqli($servername, $username, $password);
+
+            //check connection
+            if($conn->connection_error){
+                die("Connection failed: " . $conn->connect_error);
+            }
+            echo "Connected Successfully";
+
+            $conn->close();
+        ?> -->
+
+    <!-- <?php
+            $servername = "localhost";
+            $username = "username";
+            $password = "password";
+            $dbname = "signupDB";
+
+            //create connection(msqli-procedural)
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+            //check connection
+            if(!conn){
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            echo "Connected Successfully";
+
+            //Create database
+            $sql = "CREATE TABLE SignUp (
+                id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                firstname VARCHAR(30) NOT NULL,
+                lastname VARCHAR(30) NOT NULL,
+                email VARCHAR(50),
+                reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON
+                UPDATE CURRENT_TIMESTAMP 
+                )";
+
+                $sql = "INSERT INTO SignUp (firstname, lastname, email)
+                VALUES("Adeniyi", "Adejumo", "niyiade97@gmail.com")";
+
+                $sql .= "INSERT INTO SignUp (firstname, lastname, email)
+                VALUES("Ade", "Sola", "niyiade97@gmail.com")";
+
+                $sql .= "INSERT INTO SignUp (firstname, lastname, email)
+                VALUES("niyi", "jumo", "niyiade97@gmail.com")";
+
+                if(mysqli_multi_query($conn, $sql)){
+                    echo "New record created Successfully";
+                }
+                else{
+                    echo " Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+            }
+
+            mysqli_close($conn);
+        ?>-->
+  </body>
+</html>

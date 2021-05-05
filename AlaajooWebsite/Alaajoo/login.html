@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/7638b55f18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- HEADER -->
+  <header id="header">
+      <div class="header-container">
+        <h2 class="header-text" id="header-text">ALAA<span class="logo-text">JOO</span></h2>
+        <div class="menu-icon" id="menu-icon">
+          <a id="menu" class="fa fa-bars"></a>
+        </div>
+      </div>
+      <div id="side-nav" class="header-nav-container">
+        <div class="side-nav-header-container">
+          <h2 class="side-nav-header">ALAA<span class="logo-text">JOO</span>
+          <i id="close-icon" class="fa fa-times"></i>
+        </div>
+        <ul>
+          <li class="link-li nav-link">
+            <i class="nav-icon fa fa-tachometer"></i>
+            <a href="home.html" id="home">Home</a>
+          </li>
+          <li class="link-li">
+            <i class="fas fa-address-card"></i>
+            <a href="./about.html" id="about">About</a>
+          </li>
+          <li class="link-li">
+            <i class="fas fa-calendar-alt"></i>
+            <a href="./plans.html" id="plans">Plans</a>
+          </li>
+          <li class="link-li">
+            <i class="nav-icon fa fa-registered"></i>
+            <a href="./signUp.html" id="register">Join Us</a>
+          </li>
+          <!-- <li class="link-li">
+            <i class="nav-icon fa fa-sign-out"></i>
+            <a href="#logout" id="logout">Logout</a>
+          </li> -->
+        </ul>
+      </div>
+  </header>
+  <body>
+    <section class="account-container">
+      <div class="login-container">
+        <div class="login-header">
+          <!-- <h2 class="header-text" id="header-text">
+            <i class="far fa-calendar-alt"></i>
+            ALAA<span class="logo-text">JOO</span> -->
+          </h2>
+        </div>
+        <div class="login-wrapper">
+          <div class="login-h1-text">
+            <h1>Login</h1>
+          </div>
+          <div class="social-media-icon">
+            <i class="media-icon fa fa-facebook"></i>
+            <i class="media-icon fa fa-google"></i>
+            <i class="media-icon fa fa-twitter"></i>
+          </div>
+          <div class="login-p-text">
+            <p>Welcome back!!!</p>
+          </div>
+          <form action="/login" method="post">
+            <p class="error-message"></p>
+            <div class="input-container">
+              <div class="inner-input-container">
+                <i class="fa fa-envelope icon"> </i>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  name="email"
+                  class="email"
+                  required
+                />
+              </div>
+              <div class="inner-input-container">
+                <i class="fa fa-lock icon"> </i>
+                <input
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  required
+                  class="password"
+                />
+              </div>
+            </div>
+            <input type="submit" class="login-btn" value="LOG IN" />
+            <div class="signup-forgotpassword">
+              <a href="signUp.html">signup</a>
+              <a href="">forgot password</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="login-register-container">
+        <div class="login-register-inner-container">
+          <div class="login-h1-text">
+            <h1>Hello, Friend!</h1>
+          </div>
+          <div class="login-register-p-text">
+            <p>Enter personal details and start your journey with us</p>
+          </div>
+          <a href="signUp.html">
+            <input class="register-btn" type="submit" value="SIGN UP" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer">
+        <div>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-facebook footer-logo"></a>
+          <a href="#" class="fa fa-twitter f"></a>
+        </div>
+        <p>Copyright@Alaajoo</p>
+      </div>
+    </footer>
+  </body>
+</html>

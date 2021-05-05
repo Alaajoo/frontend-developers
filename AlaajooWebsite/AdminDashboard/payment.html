@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/payment.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <!--Side Bar Nav-->
+        <nav class="sidebar">
+          <div class="logo">
+            <a href="#">
+              <h2 class="header-text" id="header-text">
+                ALAA<span class="logo-text">JOO</span>
+              </h2>
+            </a>
+          </div>
+          <ul class="side-nav">
+            <li class="side-nav_item">
+              <a href="SignupRequest.html" class="side-nav_link">
+                <i class="fa fa-google-wallet" aria-hidden="true"></i>
+                <span>Requests</span>
+              </a>
+            </li>
+            <li class="side-nav_item">
+              <a href="#" class="side-nav_link">
+                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                <span>Payment</span>
+              </a>
+            </li>
+           
+            <li class="side-nav_item logout">
+              <a href="#" class="side-nav_link">
+               <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!--Dashboard View-->
+        <section class="dashboard-view">
+          <h2 class="greeting">Dear Oluwakemi Good evening</h2>
+
+          <div class="update-div">
+            <div class="update-text">
+              <h2>PAYMENT</h2>
+              <div class="input-group">
+                <div class="input-box">
+                  <h4>Card Details</h4> <br>
+                  <input
+                    type="radio"
+                    name="pay"
+                    id="bc1"
+                    checked
+                    class="radio"
+                  />
+                  <label for="bc1">
+                    <span>
+                      <i class="fa fa-cc-visa"> Credit card</i>
+                    </span>
+                  </label>
+
+                  <input type="radio" name="pay" id="bc2" class="radio" />
+                  <label for="bc2">
+                    <span>
+                      <i class="fa fa-cc-paypal"> Paypal </i>
+                    </span>
+                  </label>
+
+                  <input type="radio" name="pay" id="bc3" class="radio" />
+                  <label for="bc3">
+                    <span>
+                      <i class="fa fa-cc-mastercard" aria-hidden="true"> Master Card</i>
+                    </span>
+                  </label>
+
+                  
+                </div>
+              </div>
+               <div class="input-group">
+        <div class="input-box">
+         
+          <i class="fa fa-credit-card icon"></i>
+           <input type="tel" class="name" placeholder="card number" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-box">
+          
+          <i class="fa fa-user icon"></i>
+          <input type="tel" required placeholder="Card CVC">
+        </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <script src="js/jquery.js" type="text/javascript" defer></script> -->
+  </body>
+</html>

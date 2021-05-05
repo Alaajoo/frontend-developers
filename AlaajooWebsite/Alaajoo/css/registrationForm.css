@@ -1,0 +1,113 @@
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  background: #0f1427;
+  text-rendering: optimizeLegibility;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  margin-right: 20px;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  padding: 0 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.update-div {
+  display: flex;
+  width: 950px;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #fff;
+  color: #4f4f4f;
+  box-shadow: 0px 44px 100px rgba(99, 92, 92, 0.25);
+  border-radius: 10px;
+  margin: 20px;
+}
+.update-text h2 {
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+}
+form {
+  width: 100%;
+}
+form h4 {
+  padding-top: 20px;
+}
+.name,
+.email,
+.password,
+.number {
+  width: 80%;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.button {
+  margin: 10px auto;
+  width: 30%;
+}
+.buttonn {
+  cursor: pointer;
+  margin: 10px auto;
+  width: 30%;
+  color: #fff;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border-style: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.update-div {
+  padding: 30px;
+  font-size: 16px;
+}
+.update-div p {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}

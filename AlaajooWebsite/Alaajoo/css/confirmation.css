@@ -1,0 +1,81 @@
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  background: #0f1427;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  margin-right: 20px;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+/* Container */
+
+.confirm .container {
+  width: 90%;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.confirm .container p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #032539;
+  margin: 30px auto;
+  width: 700px;
+  text-align: center;
+}
+.payment-btn {
+  background: #e64d45;
+  border-radius: 5px;
+  border-style: none;
+  color: #fdfdfd;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 15px;
+  padding: 15px;
+}
+.payment-btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 398px) {
+  .confirm .container p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
